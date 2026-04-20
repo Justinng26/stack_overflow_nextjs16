@@ -1,7 +1,7 @@
 const Page = () => {
     return (
         <div>
-            <h1 className="text-3xl">next js 16</h1>
+            <h1 className="h1-bold ">next js 16</h1>
         </div>
     )
 }
