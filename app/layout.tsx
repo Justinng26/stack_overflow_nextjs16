@@ -1,12 +1,16 @@
 import type {Metadata} from "next";
 import localFont from "next/font/local";
 import "./globals.css";
-import { ThemeProvider } from "@/components/theme-provider"
-import { Geist } from "next/font/google";
-import { cn } from "@/lib/utils";
+import {ThemeProvider} from "@/components/theme-provider"
+import {Geist} from "next/font/google";
+import {cn} from "@/lib/utils";
+import {Toaster} from "sonner";
+import {ReactNode} from "react";
+import {SessionProvider} from "next-auth/react";
+import { auth } from "@/auth";
 
 
-const geist = Geist({subsets:['latin'],variable:'--font-sans'});
+const geist = Geist({subsets: ['latin'], variable: '--font-sans'});
 
 const inter = localFont({
     src: "./fonts/InterVF.ttf",
@@ -29,26 +33,30 @@ export const metadata: Metadata = {
     },
 };
 
-export default function RootLayout({
-                                       children,
-                                   }: Readonly<{
-    children: React.ReactNode;
-}>) {
+const RootLayout = async ({children}: { children: ReactNode }) => {
+    const session = await auth();
     return (
         <html lang="en" suppressHydrationWarning className={cn("font-sans", geist.variable)}>
-        <body
-            className={`${inter.className} ${spaceGrotesk.variable} antialiased`}
-        >
-        <ThemeProvider
-            attribute="class"
-            defaultTheme="system"
-            enableSystem
-            disableTransitionOnChange
-        >
+        <SessionProvider session={session}>
 
-            {children}
-        </ThemeProvider>
-        </body>
+
+            <body
+                className={`${inter.className} ${spaceGrotesk.variable} antialiased`}
+            >
+            <ThemeProvider
+                attribute="class"
+                defaultTheme="system"
+                enableSystem
+                disableTransitionOnChange
+            >
+
+                {children}
+            </ThemeProvider>
+            <Toaster/>
+            </body>
+        </SessionProvider>
         </html>
     );
 }
+
+export default RootLayout;
