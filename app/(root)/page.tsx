@@ -25,12 +25,11 @@
 
 // export default Home;
 
-import { auth } from "@/auth";
+import {auth} from "@/auth";
 
 const Home = async () => {
     const session = await auth();
 
-    console.log(session);
 
     return (
         <>
