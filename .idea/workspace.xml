@@ -5,25 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b09d0170-6d13-45a0-a71a-0be234e0ab8d" name="Changes" comment="Assets and metadata">
-      <change afterPath="$PROJECT_DIR$/app/(root)/ask-a-question/page.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/(root)/collection/page.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/(root)/community/page.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/(root)/jobs/page.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/(root)/profile/[id]/page.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/(root)/tags/page.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/forms/AuthForm.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/navigation/navbar/MobileNavigation.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/navigation/navbar/NavLinks.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/constants/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/auth.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/validations.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/(auth)/sign-in/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/(auth)/sign-in/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/(auth)/sign-up/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/(auth)/sign-up/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/(root)/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/(root)/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/layout.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/navigation/navbar/MobileNavigation.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/navigation/navbar/MobileNavigation.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/navigation/navbar/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/navigation/navbar/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/theme-provider.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/providers/theme-provider.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,6 +66,7 @@
       <recent name="$PROJECT_DIR$" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/components/providers" />
       <recent name="$PROJECT_DIR$/app/(root)" />
       <recent name="$PROJECT_DIR$/app/(auth)" />
       <recent name="$PROJECT_DIR$/app" />
@@ -100,7 +87,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1776701355179</updated>
-      <workItem from="1776701356181" duration="44220000" />
+      <workItem from="1776701356181" duration="48278000" />
     </task>
     <servers />
   </component>
